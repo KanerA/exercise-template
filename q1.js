@@ -2,10 +2,7 @@ function run() {
     const input = document.getElementById("input").value;
     const output = document.getElementById("output");
     let out = "";
-/**/
-    // write your code here
-    // out = input + 5;
-
-/**/
+    const arr = JSON.parse(input);
+    out= ({}).toString.call(arr) === '[object Array]' ? 'true' : 'false';        
     output.innerText = out;
 }

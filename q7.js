@@ -4,7 +4,6 @@ function run() {
     let out = "";
     let arr = JSON.parse(input);
     let sortedArr=[];
-    OgLen=arr.length;
     while(arr.length!==0){
         let num=arrBig(arr);  
         sortedArr.unshift(arr[num]);

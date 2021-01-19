@@ -1,11 +1,15 @@
 function run() {
-    const input = document.getElementById("input").value;
+    const prop = document.getElementById("input").value;
+    const input2 = document.getElementById("input2").value;
     const output = document.getElementById("output");
     let out = "";
-/**/
-    // write your code here
-    // out = input + 5;
-
-/**/
+    let arr=eval(input2);
+    let newArr=[];
+    for(let i=0; i<arr.length; i++){
+        if(arr[i].hasOwnProperty(prop)){
+            newArr.push(arr[i][prop]);
+        }
+    }
+    out = newArr;
     output.innerText = out;
 } 
